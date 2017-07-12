@@ -3060,7 +3060,7 @@ td, th {
 }
 
 .collection .collection-item.active {
-  background-color: #26a69a;
+  background-color: #b71c1c;
   color: #eafaf9;
 }
 
@@ -3071,7 +3071,7 @@ td, th {
 .collection a.collection-item {
   display: block;
   transition: .25s;
-  color: #26a69a;
+  color: #b71c1c;
 }
 
 .collection a.collection-item:not(.active):hover {
@@ -3094,7 +3094,7 @@ td, th {
 
 .secondary-content {
   float: right;
-  color: #26a69a;
+  color: #b71c1c;
 }
 
 .collapsible .collection {
