@@ -121,11 +121,19 @@
     margin-top: -600px;
   }
 
-  div.main-card h3 {
-    /*margin-top: 5px;*/
-  }
 
   .main-card p.flow-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #5c5c5c;
+  }
+
+  .main-card-tab {
+    margin-top: -592px;
+  }
+
+
+  .main-card-tab p.flow-text {
     font-size: 14px;
     font-weight: 300;
     color: #5c5c5c;
