@@ -682,3 +682,122 @@
       min-height: 200px;
     }
   }
+
+/* --- Hover Icon effects --- */
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 4px;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+
+.icon-cube {
+  position: relative;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  overflow: visible;
+}
+
+.icon-cube::before,
+.icon-cube::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*
+  background: url("../images/icons5.png");
+  background-image: url("../images/icons5.svg"), none;
+*/
+  background-size: auto 36px;
+  content: "";
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.icon-cube::before {
+  z-index: 2;
+  background-color: #595959;
+}
+
+.icon-cube::after {
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translateY(18px) rotateX(-90deg);
+          transform: translateY(18px) rotateX(-90deg);
+}
+
+.icon-cube:hover::before {
+  opacity: 0;
+  -webkit-transform: translateY(-18px) rotateX(90deg);
+          transform: translateY(-18px) rotateX(90deg);
+}
+
+.icon-cube:hover::after {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+          transform: rotateX(0);
+}
+
+/* facebook */
+.icon-cube.facebook::before,
+.icon-cube.facebook::after {
+ 
+    background: url("../images/googleScholar.svg"), none;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  background-position: 0 0; 
+}
+
+.icon-cube.facebook::after {
+  background-color: #3b5998;
+}
+
+/* twitter */
+.icon-cube.twitter::before,
+.icon-cube.twitter::after {
+  background-position: -36px 0;
+  
+}
+
+.icon-cube.twitter::after {
+  background-color: #4099ff;
+}
+
+/* google plus */
+.icon-cube.googleplus::before,
+.icon-cube.googleplus::after {
+  background-position: -72px 0;
+}
+
+.icon-cube.googleplus::after {
+  background-color: #d34836;
+}
+
+/* github */
+.icon-cube.github::before,
+.icon-cube.github::after {
+  background-position: -108px 0;
+}
+
+.icon-cube.github::after {
+  background-color: #333333;
+}
+
+/* rss */
+.icon-cube.rss::before,
+.icon-cube.rss::after {
+  background-position: -144px 0;
+}
+
+
+.icon-cube.rss::after {
+  background-color: #ee802f;
+}
