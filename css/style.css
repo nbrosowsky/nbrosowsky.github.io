@@ -138,7 +138,18 @@
     font-weight: 300;
     color: #5c5c5c;
   }
-  /*****************************/
+
+.categories-container.pinned {
+    background-color: white;
+    width: 75%;
+
+}
+
+.categories-container.pinned > ul > li > a {
+    color: black;
+}
+
+/*****************************/
   /* References Style */
 
   .citation {
