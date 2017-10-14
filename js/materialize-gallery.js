@@ -1531,11 +1531,12 @@ var MMCQ = function() {
 function(a) {
     a(function() {
         a(".button-collapse").sideNav();
-        var b = a("nav .categories-container");
+//        var b = a("nav .categories-container");
+        var b = a(".categories-container");
         if (b.length) {
-            b.pushpin({
-                top: b.offset().top
-            });
+//            b.pushpin({
+//                top: b.offset().top
+//            });
             var c = b.find("li");
             c.each(function() {
                 var b = a(this);
