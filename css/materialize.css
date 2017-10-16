@@ -5176,6 +5176,14 @@ small {
   background-color: #2bbbad;
 }
 
+.btn.blue:hover, .btn-large.blue:hover {
+  background-color:  #64b5f6 !important;
+}
+
+.btn.green:hover, .btn-large.green:hover {
+  background-color:  #66bb6a !important;
+}
+
 .btn-floating {
   display: inline-block;
   color: #fff;
@@ -5515,6 +5523,10 @@ button.btn-floating {
 
 .waves-effect.waves-teal .waves-ripple {
   background-color: rgba(0, 150, 136, 0.7);
+}
+
+.waves-effect.waves-blue .waves-ripple {
+  background-color: rgba(33, 150, 243, 0.7);
 }
 
 .waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
