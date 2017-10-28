@@ -85,7 +85,7 @@
                         <div class="card">
                             <div class="card-content">
                                 <h5>Programming Challenge: A Weekly Experiment</h5>
-                                <p><em>Last Updated: Oct. 16, 2017</em></p>
+                                <p><em>Last Updated: Oct. 26, 2017</em></p>
                                 <br/>
                                 <p>
                                     I've decided to challenge myself to programming a browser-based experiment every week. These will be versions of various published cognitive psychology experiments that I think are interesting or challenging to program in the browser.
@@ -132,6 +132,54 @@
 
 
                                             <p class="citation" style="font-size: 90%">Stoet, G., O'Connor, D.B., Conner, M. &amp; Laws, K.R. (2013), Are women better than men at multi-tasking? <em>BMC Psychology. </em>1:18.</p>
+
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons rotate">child_care</i>Week 2: Face Inversion</div>
+                                        <div class="collapsible-body blue-grey lighten-5">
+                                            <p>
+                                                It has long been known that presenting a face upside-down can dramatically impair recognition.
+                                            </p>
+                                            <br />
+                                            <p>
+                                                However, Yin (1969) was the first to show that inverting the orientation of images impacts our recognition of faces far more than other mono-oriented objects (objects that we typically see in a single orientation). Since then, researchers have debated whether the face inversion effect reflects a "special" face process that is disrupted or a more general effect of learning and expertise.
+                                            </p>
+                                            <br/>
+                                            <p>
+                                                This experiment demo is almost identical to Yin's experiment 1 (1969). However, here we're only comparing recognition of faces to houses. Additionally, in the original study Yin alternated between small study/test blocks. Here, you study all 96 images first, then complete the forced-choice recognition memory task where you're tested on all 96 images.
+                                            </p>
+                                            <br/>
+                                            <p>
+                                                The face images come from the Chicago Face Database (Ma, Correll, & Wittenbrink 2015; <a href="http://faculty.chicagobooth.edu/bernd.wittenbrink/cfd/index.html" target="_blank">faculty.chicagobooth.edu/bernd.wittenbrink/cfd/</a>), while the house images come the Computational Vision Group (<a href="http://www.vision.caltech.edu/archive.html" target="_blank">vision.caltech.edu/archive</a>)
+                                            </p>
+                                            <br />
+                                            <div class="row">
+                                                <a style="margin: 5px" class="btn green waves-effect waves-light" href="https://nbrosowsky.github.io/ExpDemos/FaceInversion/task.html" target="_blank">Run<i class="material-icons right">videogame_asset</i></a>
+                                                <a style="margin: 5px" class="btn blue waves-effect waves-light" href="https://github.com/nbrosowsky/ExpDemos/tree/master/FaceInversion" target="_blank">Code<i class="material-icons right">code</i></a>
+
+                                            </div>
+                                            <br />
+                                            <p style="border-top: solid; border-width: thin"><em>Further Reading:</em></p>
+                                            <br />
+                                            <p class="citation" style="font-size: 90%">Ma, D. S., Correll, J., & Wittenbrink, B. (2015). The Chicago face database: A free stimulus set of faces and norming data. <em>Behavior research methods</em>, 47(4), 1122-1135.
+                                            </p>
+                                            
+<!--
+                                            <p class="citation" style="font-size: 90%"> Rossion, B., & Gauthier, I. (2002). How does the brain process upright and inverted faces?. <em>Behavioral and cognitive neuroscience reviews </em>, 1(1), 63-75.
+                                            </p>
+                                            
+                                                                                        
+-->
+                                            <p class="citation" style="font-size: 90%"> Yin, R. K. (1969). Looking at upside-down faces. <em>Journal of experimental psychology </em>, 81(1), 141.
+                                            </p>
+ 
+                                            <p class="citation" style="font-size: 90%"> Valentine, T. (1988). Upside‐down faces: A review of the effect of inversion upon face recognition. <em>British journal of psychology </em>, 79(4), 471-491.
+                                            </p>
+
+
+
 
 
                                         </div>
@@ -237,6 +285,7 @@
     <script src="js/init.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
 
+
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script>
         // init Isotope
@@ -292,7 +341,6 @@
                 $(this).addClass('is-checked');
             });
         });
-
     </script>
     <script>
         $(document).ready(function() {
@@ -349,7 +397,6 @@
 
 
         });
-
     </script>
 
 </body>
