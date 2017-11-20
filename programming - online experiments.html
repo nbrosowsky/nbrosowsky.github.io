@@ -68,7 +68,7 @@
                             <h4 class="headerH4">Programming Projects</h4>
                             <div>
 
-                               <a class="waves-effect waves-light btn blue" href="programming.html"><i class="material-icons left">arrow_back</i>BACK</a>
+                                <a class="waves-effect waves-light btn blue" href="programming.html"><i class="material-icons left">arrow_back</i>BACK</a>
                             </div>
 
 
@@ -173,6 +173,81 @@
 
                                         </div>
                                     </li>
+
+
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons">trending_down</i>Week 3: Levels of Processing</div>
+                                        <div class="collapsible-body blue-grey lighten-5">
+                                            <p>
+                                                The levels of processing model of memory was first proposed by Craik and Lockhart (1972) as an alternative to prior multistore models (e.g., Atkinson and Shiffrin, 1971).
+                                            </p>
+                                            <br />
+                                            <p>
+                                                The levels of processing model suggests that it is the <strong>depth</strong> of mental processing that influences the strength of memories. Experiences that are "deeply" processed should therefore lead to stronger, longer lasting memories, while "shallow" processing should lead to weak memories that are easily forgotten.
+                                            </p>
+                                            <br/>
+                                            <p>
+                                                Shallow processing is thought to occur when we process only the physical features of some object. For example, we may only process how an object looks (structrual) or sounds (phonemic). Deep processing is thought to occur when we process the semantic information and make connections with previous knowledge. For example, we can think of how an object relates to other objects, or process the meaning of a word.
+                                            </p>
+                                            <br/>
+
+                                            <p>
+                                                This experiment is a replication of Craik and Tulving's (1975) Experiment 1. In this experiment we test four different levels of processing using an incidental learning task and recognition memory test. Throughout the first phase of the experiment, you have to make judgments about words:
+                                            </p>
+                                            <br />
+                                            <ol>
+                                                <li>Is the word in capital letters? (shallow processing)</li>
+                                                <li>Does the word rhyme with [WORD]? (shallow processing)</li>
+                                                <li>Is the word a(n) type of [CATEGORY]? (deep processing) </li>
+                                                <li>Does the word fit the sentence: [SENTENCE]? (deep processing)</li>
+                                            </ol>
+                                            <br/>
+                                            <p>
+                                                In the second phase you are shown a list of words, half old and half new, and identify the old words. Craik and Tulving found memory accuracy to be best for the sentence and category tasks, less for the rhyming task, and poorest for the capital letter task.
+                                            </p>
+                                            <br/>
+                                            <p>
+                                                <strong>*Technical notes: </strong>To construct the stimuli, I started with the wordlist from Battig and Montague's (1969) list of categorized norm words
+                                                (<a href="https://cran.r-project.org/web/packages/WordPools/index.html" target="_blank">retrieved from the Wordpools R package</a>). I then used the RiTa javascript library to find rhyming words (<a href="http://rednoise.org/rita/index.php" target="_blank">RiTa.js</a>), and finally used the Tatoeba collection fo sentences to find sentences that contained each word (<a href="https://tatoeba.org/eng/downloads" target="_blank">tatoeba.org</a>).
+                                            </p>
+                                            <br />
+                                              <p>
+                                               The completed version of this search can be downloaded here as a JSON file (<a href="https://github.com/nbrosowsky/ExpDemos/blob/master/LevelsOfProcessing/wordLists/allBattig.json" target="_blank">complete search</a>). However, since not all the words matched with rhymes or sentences, and to shrink the file size, I trimmed the wordlist down to only words matched for categories, rhymes, and sentences (~2100 words). This limited version can be downloaded here (<a href="https://github.com/nbrosowsky/ExpDemos/blob/master/LevelsOfProcessing/wordLists/ltdBattig.json" target="_blank">limited wordlist</a>).
+                                            </p>
+                                            <br />
+                                            <div class="row">
+                                                <a style="margin: 5px" class="btn green waves-effect waves-light" href="https://nbrosowsky.github.io/ExpDemos/LevelsOfProcessing/task.html" target="_blank">Run<i class="material-icons right">videogame_asset</i></a>
+                                                <a style="margin: 5px" class="btn blue waves-effect waves-light" href="https://github.com/nbrosowsky/ExpDemos/tree/master/LevelsOfProcessing" target="_blank">Code<i class="material-icons right">code</i></a>
+
+                                            </div>
+                                            <br />
+                                            <p style="border-top: solid; border-width: thin"><em>Further Reading:</em></p>
+                                            <br />
+                                             <p class="citation" style="font-size: 90%">
+                                                Atkinson, R. C., &amp; Shiffrin, R. M. (1971). The control processes of short-term memory. Stanford: Stanford University.
+                                            </p>
+                                            <p class="citation" style="font-size: 90%">
+                                                Battig, W. F., &amp; Montague, W. E. (1969). Category norms of verbal items in 56 categories A replication and extension of the Connecticut category norms.<em>Journal of experimental Psychology </em>, 80, 1.
+                                            </p>
+
+                                            <!--
+                                            <p class="citation" style="font-size: 90%"> Rossion, B., & Gauthier, I. (2002). How does the brain process upright and inverted faces?. <em>Behavioral and cognitive neuroscience reviews </em>, 1(1), 63-75.
+                                            </p>
+                                            
+                                                                                        
+-->
+                                            <p class="citation" style="font-size: 90%"> Craik, F. I., & Lockhart, R. S. (1972). Levels of processing: A framework for memory research. <em>Journal of verbal learning and verbal behavior</em>, 11, 671-684.
+                                            </p>
+
+                                            <p class="citation" style="font-size: 90%"> Craik, F. I., & Tulving, E. (1975). Depth of processing and the retention of words in episodic memory. <em>Journal of experimental Psychology: general</em>, 104, 268.
+                                            </p>
+
+                                            
+
+
+
+                                        </div>
+                                    </li>
                                     <!--
                                     <li>
                                         <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
@@ -185,8 +260,12 @@
 -->
                                 </ul>
 
+
+
                             </div>
                             <!-- end card-content -->
+
+
                         </div>
                         <!-- end card -->
                         <!-- end project section -->
