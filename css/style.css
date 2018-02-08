@@ -115,6 +115,14 @@
     width: 100%;
   }
 
+
+
+/* make card images smaller */
+.card.small .card-image,
+.card.medium .card-image,
+.card.large .card-image {
+    max-height: 45% !important;
+}
 /***********************/
 /* random helper */
 .rotate {
