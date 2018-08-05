@@ -153,6 +153,10 @@ a.svg {
     background-color: #1DA1F2;
 }
 
+.icon-up:hover {
+    fill: #353b48;
+}
+
 
 
 .bottom-1 {
