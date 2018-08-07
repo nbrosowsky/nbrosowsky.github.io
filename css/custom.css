@@ -6,8 +6,8 @@
 
 /* typography */
 
-
 /* overwrite basic style */
+
 html {
     font-size: 15px;
     font-family: "Lato";
@@ -30,7 +30,7 @@ h4 {
 
 
 p {
-    line-height: 1.35;
+    line-height: 1.5;
     font-family: Lato;
 }
 
@@ -48,11 +48,12 @@ a {
 }
 
 a:hover {
-    color:#ee5253;
+    color: #ee5253;
     text-decoration: none;
 }
 
 /* new navigation */
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: white;
@@ -66,30 +67,33 @@ a:hover {
 }
 
 .nav-pills .nav-link:hover {
-     cursor: pointer;
-    background-color: rgba(200, 214, 229,0.25);
-   /*background-color: rgb(66,63,66,0.09);*/
+    cursor: pointer;
+    background-color: rgba(200, 214, 229, 0.25);
+    /*background-color: rgb(66,63,66,0.09);*/
 }
 
 .nav-pills .nav-link.active:hover,
 .nav-pills .show > .nav-link:hover {
-   
+
     color: white;
     background-color: #353b48;
 }
 
 /* svg icons */
+
 .svg-icon {
-  display: inline-flex;
-  align-self: center;
+    display: inline-flex;
+    align-self: center;
 }
+
 .svg-icon svg {
-  height:1em;
-  width:1em;
+    height: 1em;
+    width: 1em;
 }
+
 .svg-icon.svg-baseline svg {
-  top: .125em;
-  position: relative;
+    top: .125em;
+    position: relative;
 }
 
 
@@ -164,11 +168,11 @@ a.svg {
 }
 
 .name {
-    font-family: "Yeseva One";    
+    font-family: "Yeseva One";
 }
 
-.reference { 
-/* hanging indent */
+.reference {
+    /* hanging indent */
     /*
     margin-left: 4em !important;
     text-indent: -4em;
@@ -178,19 +182,20 @@ a.svg {
 
 
 /* read more drop down / collapse */
+
 .summary p.collapse:not(.show) {
     height: 84px !important;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical;
 }
 
 .summary p.collapsing {
     min-height: 84px !important;
 }
 
-.summary .nav-link.collapsed:after  {
+.summary .nav-link.collapsed:after {
     content: '+ read more';
 }
 
@@ -207,55 +212,63 @@ a.svg {
 }
 
 /* media queries */
+
 /* xs < 768 */
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 0.9em;
     }
-    
+
     main {
-         margin-top: 25px;
+        margin-top: 25px;
         margin-bottom: 25px;
         max-width: 575px !important;
     }
-    
+
     h1 {
         font-size: 2.1rem
     }
-    
+
     h4 {
         font-size: 1.4rem
     }
 }
 
 /* sm */
+
 @media screen and (min-width: 768px) {
     body {
         font-size: .9em;
     }
     main {
-         margin-top: 50px;
-             margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
-    
+
     h1 {
         font-size: 2.25rem
     }
-    
-     h4 {
+
+    h4 {
         font-size: 1.5rem
     }
 }
 
 /* md */
+
 @media screen and (min-width: 992px) {
     body {
         font-size: .95rem;
     }
-    
+
+    main {
+        max-width: 800px !important;
+    }
 }
 
 /* lg */
+
 @media screen and (min-width: 1200px) {
     body {
         font-size: 1rem;
@@ -263,10 +276,10 @@ a.svg {
     h4 {
         font-size: 1.6rem
     }
-    
+
     main {
         margin-top: 75px;
         margin-bottom: 75px;
-        max-width: 875px !important;
+        max-width: 800px !important;
     }
 }
